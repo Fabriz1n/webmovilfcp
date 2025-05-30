@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>FCCASCGF - UAGRM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="img/icon-192x192.png" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Menú principal">
+      <div class="logo">FCCASCGF - UAGRM</div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span class="hamburger-icon">☰</span>
+      </button>
+      <ul class="nav-menu" id="menu">
+        <li><a href="#" aria-current="page">Inicio</a></li>
+        <li class="has-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="dropdown-menu">Secciones</button>
+          <ul class="dropdown" id="dropdown-menu">
+            <li><a href="#">Sesiones del Consejo</a></li>
+            <li><a href="#">Oferta Laboral</a></li>
+            <li><a href="#">Biblioteca Digital</a></li>
+            <li><a href="#">Artículos Científicos</a></li>
+            <li><a href="#">Auxiliares de Cátedra</a></li>
+            <li><a href="#">Reportes Económicos</a></li>
+            <li><a href="#">Moocs</a></li>
+            <li><a href="#">Trámites Económicos</a></li>
+            <li><a href="#">Aplicación Móvil</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Liga Deportiva</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="carousel">
+      <div class="slides">
+        <img src="img/UNETE1.jpg" class="slide active" alt="Imagen 1">
+        <img src="img/UNETE2.png" class="slide" alt="Imagen 2">
+        <img src="img/UNETE3.png" class="slide" alt="Imagen 3">
+      </div>
+      <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+      <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+    </div>
+    <div class="hero-text">
+      <h1>Bienvenido a Contaduría Pública UAGRM</h1>
+      <p>Formando profesionales íntegros para un futuro mejor</p>
+    </div>
+  </section>
+
+  <section class="sectiones">
+    <div class="section-header">
+      <h2><span>CANDIDATOS</span></h2>
+      <p>La Facultad de Contaduría Pública de la UAGRM forma profesionales íntegros...</p>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="img/CANDIDATO2.png" alt="Martin Bertochi">
+        <h3>Martin Bertochi</h3>
+      </div>
+      <div class="card">
+        <img src="img/CANDIDATO1.png" alt="Ernesto Quintanilla">
+        <h3>Ernesto Quintanilla</h3>
+      </div>
+      <div class="card">
+        <img src="img/CANDIDATO3.png" alt="Jose Choque">
+        <h3>Jose Choque</h3>
+      </div>
+      <div class="card">
+        <img src="img/CANDIDATO4.png" alt="ÚNETE">
+        <h3>ÚNETE</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="latest-grid">
+    <h2 class="section-title">Últimas Noticias</h2>
+    <div class="news-row">
+      <div class="news-text">
+        <h3>Martin Bertochi</h3>
+        <p>"MI LEMA COMO CANDIDATO ES PROPONER FUNDAMENTALMENTE EL CAMBIO Y LA TRANSPARENCIA..."</p>
+      </div>
+      <div class="news-image">
+        <img src="img/NOTICIA1.png" alt="Noticia 1">
+      </div>
+    </div>
+    <div class="news-row reverse">
+      <div class="news-image">
+        <img src="img/NOTICIA2.png" alt="Noticia 2">
+      </div>
+      <div class="news-text">
+        <h3>Jose Choque</h3>
+        <p>"TU ÉXITO PROFESIONAL DEPENDE DE TI..."</p>
+      </div>
+    </div>
+    <div class="news-row">
+      <div class="news-text">
+        <h3>Ernesto Quintanilla</h3>
+        <p>"EL CONOCIMIENTO ES EL PODER..."</p>
+      </div>
+      <div class="news-image">
+        <img src="img/NOTICIA3.png" alt="Noticia 3">
+      </div>
+    </div>
+  </section>
+
+  <section class="liga-deportiva">
+    <div class="liga-container">
+      <div class="liga-img">
+        <img src="img/LIGA UNIVESITARIA.jpeg" alt="Liga Deportiva">
+      </div>
+      <div class="liga-texto">
+        <h2>Liga Deportiva Facultativa</h2>
+        <p>La Liga Deportiva promueve la integración, el trabajo en equipo...</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="contacto-container">
+      <h2>Contáctanos</h2>
+      <p class="subtexto">¿Tienes dudas o sugerencias? ¡Escríbenos!</p>
+      <form class="formulario-contacto">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+  <script>
+    // Registrar el Service Worker para PWA
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('ServiceWorker registrado exitosamente');
+          })
+          .catch(err => {
+            console.log('Error al registrar el ServiceWorker:', err);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
